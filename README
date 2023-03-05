@@ -1,0 +1,18 @@
+Serb Radu 324CB
+
+Pt tema asta am luat labul 10 rezolvat de pe ocw si l-am folosit ca schelet.
+Am folosit parson pt Jsonuri pentru ca asta mi-a fost oferit de echipa si mi-a fost destul de usor sa inteleg cum functioneaza si cum sa-l folosesc.
+
+Codul principal functioneaza astfel
+citesc cate o linie de la tastatura si in functie de asta execut comanda corespunzatoare.
+am doua variaile, status si access setate initial pe 0. astea ar trebui sa ma informeze cu privire la starea de logged in sau logged out a clientului, 
+respectiv despre accesul acestuia la biblioteca.
+pentru fiecare comanda in parte:
+citesc parametrii aditionali daca este nevoie(gen username, datele despre o carte etc), instantiez un obiect json pe care sa l trimit daca e cazul,
+fac un post get sau delete request, deschid o conexiune cu serverul, trimit mesajul, primesc un raspuns.
+dupa asta verific daca am primit vreun mesaj de eroare. in multe cazuri verific daca apare o "{". fac asta ca initial voiam sa afisez fix mesajul de eroare afisat de server,
+dar m am razgandit ulterior si am afisat eu mesajul. in alte cazuri am verificat daca serverul imi intorcea "OK". cred ca cel mai ok se facea verificand 
+codul intors de server dar n am mai schimbat, sper ca nu i gresit ce am facut.
+eliberez memorie si inchid conexiunea, dupa ce afisez mesaj de eroare sau de succes al comenzii.
+singura nelamurire pe care am avut o a fost ca nu am putut sa ma folosesc de tokenul declarat initial, si trebuia sa l salvez in variabila mytoken.
+in token cand incercam sa apelez functia de compute request aveam undeva in mijlocului lui o comanda primita de la stdin si mi se pare ft dubios :))
