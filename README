@@ -14,5 +14,3 @@ dupa asta verific daca am primit vreun mesaj de eroare. in multe cazuri verific 
 dar m am razgandit ulterior si am afisat eu mesajul. in alte cazuri am verificat daca serverul imi intorcea "OK". cred ca cel mai ok se facea verificand 
 codul intors de server dar n am mai schimbat, sper ca nu i gresit ce am facut.
 eliberez memorie si inchid conexiunea, dupa ce afisez mesaj de eroare sau de succes al comenzii.
-singura nelamurire pe care am avut o a fost ca nu am putut sa ma folosesc de tokenul declarat initial, si trebuia sa l salvez in variabila mytoken.
-in token cand incercam sa apelez functia de compute request aveam undeva in mijlocului lui o comanda primita de la stdin si mi se pare ft dubios :))
